@@ -255,7 +255,7 @@ apps=("AiAsstVision" "AnalyticsCore" "CameraTools_beta" "CarWith" "CatchLog" "co
 for app in "${apps[@]}"; do
   appsui=$(sudo find "$GITHUB_WORKSPACE"/images/product/app/ -type d -iname "*${app}*")
   if [[ -n $appsui ]]; then
-    echo -e "${Yellow}- 找到精简目录2: $appsui"
+    echo -e "${Yellow}- 找到精简目录product/app: $appsui"
     sudo rm -rf "$appsui"
   fi
 done
@@ -265,7 +265,7 @@ apps=("DownloadProviderUi" "MIGalleryLockscreen-MIUI15" "MIMediaEditor" "MIGalle
 for app in "${apps[@]}"; do
   appsui=$(sudo find "$GITHUB_WORKSPACE"/images/product/data-app/ -type d -iname "*${app}*")
   if [[ -n $appsui ]]; then
-    echo -e "${Yellow}- 找到精简目录1: $appsui"
+    echo -e "${Yellow}- 找到精简目录product/data-app: $appsui"
     sudo rm -rf "$appsui"
   fi
 done
@@ -275,7 +275,7 @@ apps=("CellBroadcastReceiverResCommon_Sys.apk" "ElderlyNavigationBarOverlay.apk"
 for app in "${apps[@]}"; do
   appsui=$(sudo find "$GITHUB_WORKSPACE"/images/product/overlay/ -type d -iname "*${app}*")
   if [[ -n $appsui ]]; then
-    echo -e "${Yellow}- 找到精简目录3: $appsui"
+    echo -e "${Yellow}- 找到精简目录product/overlay: $appsui"
     sudo rm -rf "$appsui"
   fi
 done
@@ -285,7 +285,7 @@ apps=("SystemHelper" "AutoRegistration" "ConfigUpdater" "GoogleOneTimeInitialize
 for app in "${apps[@]}"; do
   appsui=$(sudo find "$GITHUB_WORKSPACE"/images/product/priv-app/ -type d -iname "*${app}*")
   if [[ -n $appsui ]]; then
-    echo -e "${Yellow}- 找到精简目录4: $appsui"
+    echo -e "${Yellow}- 找到精简目录product/priv-app: $appsui"
     sudo rm -rf "$appsui"
   fi
 done
@@ -295,7 +295,7 @@ apps=("atfwd" "AtFwd2" "colorservice" "DeviceInfo" "DeviceStatisticsService" "di
 for app in "${apps[@]}"; do
   appsui=$(sudo find "$GITHUB_WORKSPACE"/images/system_ext/app/ -type d -iname "*${app}*")
   if [[ -n $appsui ]]; then
-    echo -e "${Yellow}- 找到精简目录5: $appsui"
+    echo -e "${Yellow}- 找到精简目录system_ext/app: $appsui"
     sudo rm -rf "$appsui"
   fi
 done
@@ -305,7 +305,7 @@ apps=("AccessibilityMenu" "com.qualcomm.location" "com.qualcomm.qti.services.sys
 for app in "${apps[@]}"; do
   appsui=$(sudo find "$GITHUB_WORKSPACE"/images/system_ext/priv-app/ -type d -iname "*${app}*")
   if [[ -n $appsui ]]; then
-    echo -e "${Yellow}- 找到精简目录6: $appsui"
+    echo -e "${Yellow}- 找到精简目录system_ext/priv-app: $appsui"
     sudo rm -rf "$appsui"
   fi
 done
@@ -315,7 +315,7 @@ apps=("CACertService" "CneApp" "com.qualcomm.qti.gpudrivers.pineapple.api34" "IW
 for app in "${apps[@]}"; do
   appsui=$(sudo find "$GITHUB_WORKSPACE"/images/vendor/app/ -type d -iname "*${app}*")
   if [[ -n $appsui ]]; then
-    echo -e "${Yellow}- 找到精简目录7: $appsui"
+    echo -e "${Yellow}- 找到精简目录vendor/app: $appsui"
     sudo rm -rf "$appsui"
   fi
 done
@@ -325,7 +325,7 @@ apps=("AnalyticsCore" "BasicDreams" "BluetoothMidiService" "IWlanService" "Camer
 for app in "${apps[@]}"; do
   appsui=$(sudo find "$GITHUB_WORKSPACE"/images/system/system/app/ -type d -iname "*${app}*")
   if [[ -n $appsui ]]; then
-    echo -e "${Yellow}- 找到精简目录8: $appsui"
+    echo -e "${Yellow}- 找到精简目录system/app: $appsui"
     sudo rm -rf "$appsui"
   fi
 done
@@ -335,7 +335,7 @@ apps=("BackupRestoreConfirmation" "BlockedNumberProvider" "BuiltInPrintService" 
 for app in "${apps[@]}"; do
   appsui=$(sudo find "$GITHUB_WORKSPACE"/images/system/system/priv-app/ -type d -iname "*${app}*")
   if [[ -n $appsui ]]; then
-    echo -e "${Yellow}- 找到精简目录9: $appsui"
+    echo -e "${Yellow}- 找到精简目录system/priv-app: $appsui"
     sudo rm -rf "$appsui"
   fi
 done
